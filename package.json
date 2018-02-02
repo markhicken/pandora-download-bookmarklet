@@ -1,0 +1,23 @@
+{
+  "name": "pandora-download-bookmarklet",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf ./build && mkdir build",
+    "build": "npm run clean && node ./node_modules/.bin/bookmarkletify ./save-current-track.js -o ./build/save-current-track.webloc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markhicken/pandora-download-bookmarklet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markhicken/pandora-download-bookmarklet/issues"
+  },
+  "homepage": "https://github.com/markhicken/pandora-download-bookmarklet#readme",
+  "dependencies": {
+    "bookmarkletify": "^1.0.0"
+  }
+}
