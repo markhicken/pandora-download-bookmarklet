@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf ./build && mkdir build",
-    "build": "npm run clean && node ./node_modules/.bin/bookmarkletify ./save-current-track.js -o ./build/save-current-track.webloc",
+    "build": "npm run clean && node ./node_modules/.bin/bookmarkletify ./save-current-track.js -o ./build/save-current-track.webloc && npm run open",
+    "open": "open ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

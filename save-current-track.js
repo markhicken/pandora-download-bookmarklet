@@ -17,7 +17,8 @@ if (audios && audios.length && track && artist && album) {
     link.style = 'display: none';
     link.id = 'temp_link';
     link.href = audio.src;
-    link.innerText = 'Download Current Song';
+    link.target = '_blank';
+    link.innerText = fileName;
     link.download = fileName;
     document.body.append(link);
     var domLink = document.getElementById('temp_link');
